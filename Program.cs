@@ -8,125 +8,179 @@ using System.IO;
 namespace myFirstProject {
 
     // creating a class and object;
-    class Car {
+    //class Car {
 
-        static void MyMethod() {
-            Console.WriteLine("Hello welcome to my world.");
+    //    static void MyMethod() {
+    //        Console.WriteLine("Hello welcome to my world.");
+    //    }
+
+    //    static void Greeting(string text) {
+    //        if (text.Length > 5) {
+    //            Console.WriteLine(text);
+    //        } else {
+    //            Console.WriteLine("Empty parameter");
+    //        }
+    //        //Console.WriteLine(text);
+    //    }
+
+    //    static int PlusMethod(int a, int b) { 
+    //        return a + b;
+    //    }
+
+    //    // student data
+    //    string name = "Marco";
+    //    string color = "Black";
+    //    int roll_num = 150;
+    //    string class_name = "Grade 8";
+    //    string section = "A";
+    //    string subject2 = "C#";
+    //    string subject1 = ".Net";
+    //    int sub1_marks = 95;
+    //    int sub2_marks = 97;
+
+    //    // employee data
+    //    int emp_num = 120;
+    //    string desig_name = ".Net Developer";
+    //    string dept = "IT Dep";
+
+    //    static void Main(string[] args)
+    //    {
+    //        // object instancaton / creating an objects
+    //        Car myObj = new Car();
+    //        Console.WriteLine(myObj.color);
+    //        MyMethod();
+    //        Greeting("Hello marco.");
+    //        int c = PlusMethod(1, 2);
+    //        Console.WriteLine(c);
+    //    }
+    //}
+
+    class Proggrammig {
+        public string ProgLanguage = "Csharp";
+    }
+
+
+    class Fruit {
+
+        // class member;
+        string name;
+        int age;
+        string address;
+
+        // class constructor
+        public string model; // creating a field
+        public string color;
+        public int prize;
+
+        // creating a class constructor
+        public Fruit(string fruitmodel, string fruitcolor, int fruitprize) {
+            // model = "Watermelon";
+            model = fruitmodel;
+            prize = fruitprize;
+            color = fruitcolor;
         }
 
-        static void Greeting(string text) {
-            if (text.Length > 5) {
-                Console.WriteLine(text);
-            } else {
-                Console.WriteLine("Empty parameter");
-            }
-            //Console.WriteLine(text);
+        public void Apple() {
+            Console.WriteLine("This is apple");
         }
 
-        static int PlusMethod(int a, int b) { 
-            return a + b;
+        public void Banana() {
+            Console.WriteLine("This is banana");
         }
 
-        // student data
-        string name = "Marco";
-        string color = "Black";
-        int roll_num = 150;
-        string class_name = "Grade 8";
-        string section = "A";
-        string subject2 = "C#";
-        string subject1 = ".Net";
-        int sub1_marks = 95;
-        int sub2_marks = 97;
+        public void Mango() {
+            Console.WriteLine("This is mango");
+        }
 
-        // employee data
-        int emp_num = 120;
-        string desig_name = ".Net Developer";
-        string dept = "IT Dep";
 
-        static void Main(string[] args)
-        {
-            // object instancaton / creating an objects
-            Car myObj = new Car();
-            Console.WriteLine(myObj.color);
-            MyMethod();
-            Greeting("Hello marco.");
-            int c = PlusMethod(1, 2);
-            Console.WriteLine(c);
+        static void Main(string[] args) {
+
+            //Fruit myObj = new Fruit();
+            //myObj.Apple();
+            //myObj.name = "Marco";
+            //Console.WriteLine(myObj.name);
+
+            
+            Fruit myObj = new Fruit("Watermelon", "Green", 2000);
+            // Console.WriteLine(myObj.model);
+            Console.WriteLine(myObj.model + " " + myObj.prize + " " + myObj.color);
+            Proggrammig myProg = new Proggrammig();
+            Console.WriteLine(myProg.ProgLanguage);
         }
     }
 
 
 
 
-    
+
     //class Program
     //{
     //    static void Main(string[] args)
     //    {
-            //Console.WriteLine("Enter your name here: ");
-            //string name = Console.ReadLine();
-            //Console.WriteLine("Your name is " + name );
+    //Console.WriteLine("Enter your name here: ");
+    //string name = Console.ReadLine();
+    //Console.WriteLine("Your name is " + name );
 
 
-            // WHILE LOOP and DO WHILE LOOP
-            //int i = 0;
+    // WHILE LOOP and DO WHILE LOOP
+    //int i = 0;
 
-            //do {
-            //    Console.WriteLine(i);
-            //    i++; // increamenting i values
-            //} while (i < 5);
-            //Console.WriteLine("While loop is terminated.");
-
-
-
-            // FOR LOOP
-            //for (int i = 0; i < 5; i++) {
-            //    Console.WriteLine(i);
-            //}
+    //do {
+    //    Console.WriteLine(i);
+    //    i++; // increamenting i values
+    //} while (i < 5);
+    //Console.WriteLine("While loop is terminated.");
 
 
-            // FOR EACH Statement
-            //string[] travel = { "Car", "Train", "Bus", "Auto" };
-            //foreach (string i in travel) {
-            //    Console.WriteLine("Your travel is: " + i);
-            //    if (i == "Train") {
-            //        Console.WriteLine("MRT");
-            //        break; // break or continue
-            //    }
-            //}
+
+    // FOR LOOP
+    //for (int i = 0; i < 5; i++) {
+    //    Console.WriteLine(i);
+    //}
 
 
-            // ARRAYS
-            //string[] travel = { "Car", "Train", "Bus", "Beep", "Jeep", "Motor"};
-            //int[] myNumber = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            //for (int i = 0; i < travel.Length; i++)
-            //{
-            //    Console.WriteLine(travel[i]);
-            //}
+    // FOR EACH Statement
+    //string[] travel = { "Car", "Train", "Bus", "Auto" };
+    //foreach (string i in travel) {
+    //    Console.WriteLine("Your travel is: " + i);
+    //    if (i == "Train") {
+    //        Console.WriteLine("MRT");
+    //        break; // break or continue
+    //    }
+    //}
 
 
-            // LIST ITEMS
-            //var cities = new List<string>() {
-            //    "Marikina",
-            //    "Quezon City",
-            //    "Pasig",
-            //    "Makati",
-            //};
-            //cities.Add("Marikina");
-            //cities.Add("Quezon City");
-            //cities.Add("Pasig");
+    // ARRAYS
+    //string[] travel = { "Car", "Train", "Bus", "Beep", "Jeep", "Motor"};
+    //int[] myNumber = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    //for (int i = 0; i < travel.Length; i++)
+    //{
+    //    Console.WriteLine(travel[i]);
+    //}
 
 
-            // Datetime Method and Different formats;
-            //DateTime today = DateTime.Now;
-            //Console.WriteLine(today.ToString("MM/dd/yyyy")); //05/12/2025
-            //Console.WriteLine(today.ToString("dddd, dd MMMM yyyy")); // Monday, 12 May 2025\
+    // LIST ITEMS
+    //var cities = new List<string>() {
+    //    "Marikina",
+    //    "Quezon City",
+    //    "Pasig",
+    //    "Makati",
+    //};
+    //cities.Add("Marikina");
+    //cities.Add("Quezon City");
+    //cities.Add("Pasig");
 
 
-            // TimeSpan
-            // DateTime lunchDate = new DateTime(2025, 5, 15, 9, 0, 0);
-            // DateTime now = DateTime.Now;
-            // Calculate the interval between the two dates.
+    // Datetime Method and Different formats;
+    //DateTime today = DateTime.Now;
+    //Console.WriteLine(today.ToString("MM/dd/yyyy")); //05/12/2025
+    //Console.WriteLine(today.ToString("dddd, dd MMMM yyyy")); // Monday, 12 May 2025\
+
+
+    // TimeSpan
+    // DateTime lunchDate = new DateTime(2025, 5, 15, 9, 0, 0);
+    // DateTime now = DateTime.Now;
+    // Calculate the interval between the two dates.
     //        // TimeSpan
     //    }
     //}   
